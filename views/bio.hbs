@@ -1,11 +1,7 @@
-<h1>Welcome to {{bioData.plant_name}}'s bio page!</h1>
-<img src="/images/{{bioData.avatar}}" alt="bio image">
-<h3>About {{bioData.name}}</h3>
-<p>{{bioData.bio}}</p> 
-
-{{!-- 
-<h1>Welcome to {{bioData.name}}'s bio page!</h1>
-<img src="/images/{{bioData.avatar}}" alt="bio image">
-<h3>About {{bioData.name}}</h3>
-<p>{{bioData.bio}}</p> 
- --}}
+<div id="plantInfo">
+    <h1>Learn More About {{bioData.name}}</h1>
+    <img id="plantImg" src="/images/{{bioData.avatar}}" alt="bio image">
+    <p>Name: {{bioData.name}}</p>
+    <p>Origin: {{bioData.origin}}</p>
+    <p>Description: {{bioData.bio}}</p> 
+</div>

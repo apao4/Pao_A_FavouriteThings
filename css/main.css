@@ -9,19 +9,17 @@ html {
   min-height: 100%; }
 
 body {
-  background: url(/public/images/agave.jpg) white;
-  color: #3a3a3a;
+  background: url(/images/dark-honeycomb.png) repeat #ED1D24;
+  color: white;
   font-size: 14px;
-  font-family: 'Avenir', Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 50px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Avenir', sans-serif; 
-  text-transform: uppercase;
-  text-align: center;}
+  font-family: 'Permanent Marker', cursive; }
 
 header {
-  background-color: #e6f9bd; }
+  background-color: #ED1D24; }
 
 nav a {
   float: right; }
@@ -33,13 +31,13 @@ nav a {
   font-size: 1.75rem;
   padding: 10px 20px 0 0; }
 nav a:hover {
-  color: #366139; }
+  color: #65b86c; }
 
 main {
   padding: 12px 20px; }
 
 footer {
-  background-color: #3a3a3a;
+  background-color: #ED1D24;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -47,29 +45,28 @@ footer {
   text-align: center;
   padding-top: 1rem; }
 
-#plants {
+#heroes {
   text-align: center;
   margin-top: 20px; }
 
-.plant-container {
-  width: 25%;
+.hero-container {
   border-radius: 1rem;
   overflow: hidden;
   display: inline-block;
   text-align: center;
   margin: 0 12px 20px;
   border: 2px solid white;
-  background: #efefef; }
-  .plant-container img {
+  background: #ED1D24; }
+  .hero-container img {
     width: 100%; }
-  .plant-container h3 {
+  .hero-container h3 {
     font-size: 1.5rem;
     padding: 8px; }
 
-.plant-container:last-of-type {
+.hero-container:last-of-type {
   margin-bottom: 120px; }
 
-.logo {
+.marvel-logo {
   width: 200px;
   position: absolute;
   bottom: 40px;
@@ -80,8 +77,11 @@ footer {
   margin: 0 auto; }
 
 @media screen and (min-width: 1032px) {
-  .plant-container:last-of-type {
+  .hero-container:last-of-type {
     margin-bottom: 20px; } }
+#plantImg {
+  width: 50%; }
+
 a {
   text-decoration: none;
   color: white;

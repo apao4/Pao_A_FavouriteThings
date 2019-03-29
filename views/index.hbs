@@ -1,11 +1,12 @@
-<section id="heroes">
+<section id="plants">
+    {{!-- <h1>My Favourite Things</h1> --}}
     {{#each avatars}}
-        <div class="hero-container">
+        <div class="plant-container">
             <a href="/{{name}}">
-                <img src="/images/{{plant_img}}" alt="avatar">
+                <img src="/images/{{avatar}}" alt="avatar">
             </a>
 
-            <h3 class="hero-name">{{plant_name}}</h3>
+            <h3 class="plantName">{{name}}</h3>
         </div>
     {{/each}} <!-- this is a repeating section -->
 
