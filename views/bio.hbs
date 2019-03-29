@@ -1,7 +1,12 @@
-<div id="plantInfo">
+<div id="plants">
     <h1>Learn More About {{bioData.name}}</h1>
-    <img id="plantImg" src="/images/{{bioData.avatar}}" alt="bio image">
-    <p>Name: {{bioData.name}}</p>
-    <p>Origin: {{bioData.origin}}</p>
-    <p>Description: {{bioData.bio}}</p> 
+    <div id="plantImg">
+        <img src="/images/{{bioData.avatar}}" alt="bio image">
+    </div>
+    <div id="plantInfo">
+        <p><strong>Name:</strong> {{bioData.name}}</p>
+        {{!-- <p><strong>Family:</strong> {{bioData.family}}</p> --}}
+        <p><strong>Origin:</strong> {{bioData.origin}}</p>
+        <p><strong>Description:</strong> {{bioData.bio}}</p> 
+    </div>
 </div>
