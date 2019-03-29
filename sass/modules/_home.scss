@@ -1,74 +1,274 @@
-
-* { border: 0; margin: 0; padding: 0; box-sizing: border-box; }
-html { position: relative; min-height: 100%; }
-
-body { 
-    background: url(/images/dark-honeycomb.png) repeat $bg-color; 
-    color: $text-color; 
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  html {
+    position: relative;
+    min-height: 100%; }
+  
+  body {
+    background: url("/public/images/agave.jpg") white;
+    color: #3a3a3a;
     font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 50px;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-    font-family: 'Permanent Marker', cursive;
-}
-
-header { background-color: $bg-color; }
-
-nav {
-    a { float: right; }
-    h1 { 
-        font-size: 2rem;
-        padding: 8px 20px;
-        display: inline-block; 
-    }
-
-    a { font-size: 1.75rem; padding: 10px 20px 0 0; }
-    a:hover { color: rgb(101, 184, 108); }
-}
-
-main { padding: 12px 20px; }
-
-footer { 
-    background-color: $bg-color; 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%; 
+    font-family: 'Avenir', Helvetica, sans-serif;
+    margin-bottom: 50px; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir', sans-serif; 
+    text-transform: uppercase;
+    text-align: center;}
+  
+  header {
+    background-color: #e6f9bd; }
+  
+  nav a {
+    float: right; }
+  nav h1 {
+    font-size: 2rem;
+    padding: 8px 20px;
+    display: inline-block; }
+  nav a {
+    font-size: 1.75rem;
+    padding: 10px 20px 0 0; }
+  nav a:hover {
+    color: #366139; }
+  
+  main {
+    padding: 12px 20px; }
+  
+  footer {
+    background-color: #3a3a3a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 50px;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1rem; 
+    margin-top: 2em;
+  }
+
+//START HEHEHHEHEHHERRE
+
+//MOBILE
+@media (max-width: 479px) {
+  
+  #plants {
+    text-align: center;
+    margin-top: 20px; }
+  
+  .plant-container {
+    width: 85%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 0 12px 20px;
+    border: 2px solid #3a3a3a;
+    background: #efefef; }
+    .plant-container img {
+      width: 100%; }
+    .plant-container h3 {
+      font-size: 1.5rem;
+      padding: 8px; }
+  
+  .plant-container:last-of-type {
+    margin-bottom: 120px; }
+  
+  .logo {
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto; }
+  
+  @media screen and (min-width: 1032px) {
+    .plant-container:last-of-type {
+      margin-bottom: 20px; } }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; }
+  
+  /*# sourceMappingURL=main.css.map */
+  
+  #plantInfo
+  {
+    width: 95%;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  #plantInfo p
+  {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  
+  #plantImg 
+  {
+    width: 100%;
+  }
+  
+  #plantImg img
+  {
+    width: 100%;
+    
+  }
 }
 
-#heroes { text-align: center; margin-top: 20px; }
+//TABLET
+@media screen and (min-width: 480px) and (max-width: 769px) {
+  
+  #plants {
+    text-align: center;
+    margin-top: 20px; }
+  
+  .plant-container {
+    width: 85%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    margin: 0 12px 20px;
+    border: 2px solid #3a3a3a;
+    background: #efefef; }
+    .plant-container img {
+      width: 100%; }
+    .plant-container h3 {
+      font-size: 1.5rem;
+      padding: 8px; }
+  
+  .plant-container:last-of-type {
+    margin-bottom: 120px; }
+  
+  .logo {
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto; }
+  
+  @media screen and (min-width: 1032px) {
+    .plant-container:last-of-type {
+      margin-bottom: 20px; } }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; }
+  
+  /*# sourceMappingURL=main.css.map */
+  
+  #plantInfo
+  {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  #plantInfo p
+  {
+    width: 75%;
+    margin-left: 50px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  
+  #plantImg 
+  {
+    width: 100%;
+    float: right;
+    margin-top: 50px;
+  }
+  
+  #plantImg img
+  {
+    width: 100%;
+    float: left;
+    
+  }
+}
 
-.hero-container { 
-    border-radius: 1rem; 
-    overflow: hidden; 
-    display: inline-block; 
+//DESKTOP
+@media screen and (min-width: 770px) {
+  
+  #plants {
+    text-align: center;
+    margin-top: 20px; }
+  
+  .plant-container {
+    width: 25%;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: inline-block;
     text-align: center;
     margin: 0 12px 20px;
     border: 2px solid white;
-    background: $bg-color;
-
-    img { width: 100%; }
-
-    h3 { font-size: 1.5rem; padding: 8px;}
-}
-
-.hero-container:last-of-type { margin-bottom: 120px; }
-
-.marvel-logo { 
-    width: 200px; 
-    position: absolute; 
-    bottom: 40px; 
-    z-index: -1; 
-    left: 0; 
-    right: 0; 
+    background: #efefef; }
+    .plant-container img {
+      width: 100%; }
+    .plant-container h3 {
+      font-size: 1.5rem;
+      padding: 8px; }
+  
+  .plant-container:last-of-type {
+    margin-bottom: 120px; }
+  
+  .logo {
+    width: 200px;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
+    left: 0;
+    right: 0;
     display: block;
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 1032px) {
-    .hero-container:last-of-type { margin-bottom: 20px; }
+    margin: 0 auto; }
+  
+  @media screen and (min-width: 1032px) {
+    .plant-container:last-of-type {
+      margin-bottom: 20px; } }
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; }
+  
+  /*# sourceMappingURL=main.css.map */
+  
+  #plantInfo
+  {
+    width: 50%;
+    text-align: left;
+    margin-top: 50px;
+  }
+  
+  #plantInfo p
+  {
+    width: 75%;
+    margin-left: 50px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  
+  #plantImg 
+  {
+    width: 50%;
+    float: right;
+    margin-top: 50px;
+  }
+  
+  #plantImg img
+  {
+    width: 100%;
+    float: left;
+    
+  }
 }
